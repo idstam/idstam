@@ -26,9 +26,18 @@ sudo mv composer.phar /usr/local/bin/composer
 git config --global user.email "$email"
 git config --global user.name "$fullname"
 
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
-echo https://dbeaver.io
+echo "if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then " >> ~/.bashrc
+echo "    GIT_PROMPT_ONLY_IN_REPO=1 " >> ~/.bashrc
+echo "    source $HOME/.bash-git-prompt/gitprompt.sh " >> ~/.bashrc
+echo "fi " >> ~/.bashrc
+
+source ~/.bashrc
+
+sudo add-apt-repository universe
+sudo apt install libfuse2
+
+echo https://www.jetbrains.com/toolbox-app/
 echo https://code.visualstudio.com/
 echo https://go.dev/doc/install
-echo https://github.com/magicmonty/bash-git-prompt
-
