@@ -11,7 +11,7 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 sudo apt update
 sudo apt install -y syncthing filezilla p7zip-full
 sudo apt install -y mc htop wget screen vim  php tilix git keepassx
-sudo apt install -y php php-curl php-intl php-mysql mbstring php-xml
+sudo apt install -y php php-curl php-intl php-mysql php-mbstring php-xml
 sudo apt install -y virtualbox virtualbox-ext-pack
 sudo apt install -y nmap
 
